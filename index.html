@@ -2,43 +2,154 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162545543-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/assets/Aeon_DS_icon_i.svg" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162545543-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-162545543-1');
-  </script>
-  <script src="https://kit.fontawesome.com/e1bc6a30fb.js" crossorigin="anonymous"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>AeonDS</title>
-  <link rel="stylesheet" href="Styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        gtag('config', 'UA-162545543-1');
+    </script>
+    <title>AeonDS</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="javascript:void(0);" class="icon navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </a>
+            <img class="logo" src="/assets/Aeon_DS_icon_i.svg">
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#navbar" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-links">Services</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-links">About</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hero class="section" id="hero">
+            <img id="hero-logo" src="./assets/Aeon_DS_logo.svg" />
+            <h1>hero</h1>
+            <div>
+                <a href="javascript:void(0);" id="heroScroll">
+                    <i class="fa fa-angle-double-down"></i>
+                </a>
+            </div>
+        </hero>
+        <section class="section" id="services">
+            <span id="services-scroll-target"></span>
+            <div class="h2-container" id="services-title">
+                <h2>Services</h2>
+                <span class="h2-underline"></span>
+            </div>
+            <div id="services-card-container">
+                <article class="services-card">
+                    <img class="services-card-img" src="./assets/closeout-management.webp" alt="">
+                    <div class="services-card-title">
+                        <a href="#">Closeout Management</a>
+                    </div>
+                    <p class="services-card-text">Coordination and delivery of high quality closeout by ensuring
+                        critical processes and check-points are in place from project initiation through to operations.
+                    </p>
+                    <a href="#" class="services-card-link">Read more</a>
+                </article>
+                <article class="services-card">
+                    <img class="services-card-img" src="./assets/reportinganalysis.webp" alt="">
+                    <div class="services-card-title">
+                        <a href="#">Reporting &amp Analytics</a>
+                    </div>
+                    <p class="services-card-text">Tracking closeout, analysis of pain points and clear, easy to digest
+                        dashboards to ensure that you have the information needed to accurately pinpoint documentation
+                        progress.</p>
+                    <a href="#" class="services-card-link">Read more</a>
+                </article>
+                <article class="services-card">
+                    <img class="services-card-img" src="./assets/operationsmaintenance.webp" alt="">
+                    <div class="services-card-title">
+                        <a href="#">Operations &amp Maintenance Manuals</a>
+                    </div>
+                    <p class="services-card-text">Maintaining a high quality building often requires a stellar
+                        foundation of information. We manage the manual process to ensure your operations team start on
+                        steady ground. </p>
+                    <a href="#" class="services-card-link">Read more</a>
+                </article>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <article id="about-text-container">
+                <div class="h2-container">
+                    <h2 id="about-title">About</h2>
+                    <span class="h2-underline"></span>
+                </div>
+                <div id="about-paragraphs">
+                    <p class="about-text">We are a professional services company who specialise in documentation and
+                        reporting for hyperscale data centers. We simplify the process by removing the ambiguity and
+                        ensuring that at handover, your delivery to the client will make a lasting impression for
+                        information on mission-critical systems</p>
+                    <p class="about-text">Our services focus on providing a front-loaded effort to ensure an effective
+                        delivery throughout the design and construction phases. This being combined with support into
+                        the first year of operations and maintenance, a smooth transition and high-quality
+                        documentation.</p>
+                </div>
+            </article>
+            <img id="about-image" src="./assets/about-background.jpg" />
+        </section>
+        <div class="breaker" ></div>
+        <section class="section" id="contact">
+            <div class="h2-container">
+                <h2 id="contact-title">Contact</h2>
+                <span class="h2-underline"></span>
+            </div>
+            <div id="contact-container">
+                <img src="assets/contact-picture.webp" id="contact-image" alt="" />
+                <div id="contact-form-container">
+                    <h3 class="contact-form-headers">Inquiries</h3>
+                    <p>For any inquiries, questions or more information about what we do and what we can do for you,
+                        contacts us via the form below</p>
+                    <h3 class="contact-form-headers">Contact Us</h3>
+                    <form action="" id="form">
+                        <label for="name">Enter Your Name</label>
+                        <input type="text" name="name" id="form-name" placeholder="Name" required>
+                        <label for="email">Enter Your Email</label>
+                        <input type="email" name="email" id="form-email" placeholder="Your@email.com" required>
+                        <label for="subject">Enter Your Subject</label>
+                        <input type="text" name="subject" id="form-subject" placeholder="Subject" required>
+                        <label for="message">Enter Your Message</label>
+                        <textarea name="message" id="form-text" cols="30" rows="10" placeholder="Message" maxlength=1000
+                            spellcheck=true></textarea>
+                        <div id="submit-container">
+                            <input type="submit" value="Submit" id="form-submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-  <div id="particles-js">
-    <div id="landingButton">
-      <h1>AEON/DS</h1>
-      <h3>We're launching soon! Please check in shortly.</h3>
-      </a>
-    </div>
-  </div>
+        </section>
+    </main>
+    <footer class="navbar">
+        <div id="footer-left-container">
+            <p> &copy;2020 AeonDS</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-  <script>
-    particlesJS.load('particles-js', 'particles.json', function () {
-      console.log('Particles.json loaded...')
-    });
-  </script>
 </body>
 
 </html>
