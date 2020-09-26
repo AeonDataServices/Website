@@ -29,25 +29,30 @@
             <img class="logo" src="/assets/Aeon_DS_icon_i.svg">
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a href="#navbar" class="nav-links">Home</a>
+                    <a href="#" class="nav-links">Home</a>
                 </li>
                 <li>
                     <a href="#services" class="nav-links">Services</a>
+                    <ul id="services-nav-menu">
+                        <li><a href="#">Closeout Management</a></li>
+                        <li><a href="#">Reporting &amp Analytics</a></li>
+                        <li><a href="#">Operations &amp Maintenance Manuals</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#about" class="nav-links">About</a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav-links">Contact</a>
+                    <a href="#contact-title" class="nav-links">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <hero class="section" id="hero">
-            <img id="hero-logo" src="./assets/Aeon_DS_logo.svg" />
+            <img id="hero-logo" src="./assets/Aeon_DS_logo_Inverted.svg" />
             <div id="hero-scroll-container">
-                <h1>hero</h1>
+                <h1>High-quality documentation for high performance data centers</h1>
                 <a href="javascript:void(0);" id="heroScroll">
                     <i class="fa fa-angle-double-down"></i>
                 </a>
@@ -63,7 +68,7 @@
                 <article class="services-card">
                     <img class="services-card-img" src="./assets/closeout-management.webp" alt="">
                     <div class="services-card-title">
-                        <a href="#">Closeout Management</a>
+                        <h2>Closeout Management</h2>
                     </div>
                     <p class="services-card-text">Coordination and delivery of high quality closeout by ensuring
                         critical processes and check-points are in place from project initiation through to operations.
@@ -73,7 +78,7 @@
                 <article class="services-card">
                     <img class="services-card-img" src="./assets/reportinganalysis.webp" alt="">
                     <div class="services-card-title">
-                        <a href="#">Reporting &amp Analytics</a>
+                        <h2>Reporting &amp Analytics</h2>
                     </div>
                     <p class="services-card-text">Tracking closeout, analysis of pain points and clear, easy to digest
                         dashboards to ensure that you have the information needed to accurately pinpoint documentation
@@ -83,7 +88,7 @@
                 <article class="services-card">
                     <img class="services-card-img" src="./assets/operationsmaintenance.webp" alt="">
                     <div class="services-card-title">
-                        <a href="#">Operations &amp Maintenance Manuals</a>
+                        <h2>Operations &amp Maintenance Manuals</h2>
                     </div>
                     <p class="services-card-text">Maintaining a high quality building often requires a stellar
                         foundation of information. We manage the manual process to ensure your operations team start on
@@ -91,6 +96,8 @@
                     <a href="#" class="services-card-link">Read more</a>
                 </article>
             </div>
+            <div id="triangle-bottom-left"></div>
+            <div id="triangle-bottom-right"></div>
         </section>
         <section class="section" id="about">
             <article id="about-text-container">
@@ -111,19 +118,19 @@
             </article>
             <img id="about-image" src="./assets/about-background.jpg" />
         </section>
-        <div class="breaker" ></div>
         <section class="section" id="contact">
             <div class="h2-container">
                 <h2 id="contact-title">Contact</h2>
                 <span class="h2-underline"></span>
             </div>
             <div id="contact-container">
-                <img src="assets/contact-picture.webp" id="contact-image" alt="" />
+                <div id="contact-image-wrapper">
+                    <div id="contact-image-overlay"></div>
+                    <img src="assets/mail.png" id="contact-image" alt="" />
+                </div>
                 <div id="contact-form-container">
                     <h3 class="contact-form-headers">Inquiries</h3>
-                    <p>For any inquiries, questions or more information about what we do and what we can do for you,
-                        contacts us via the form below</p>
-                    <h3 class="contact-form-headers">Contact Us</h3>
+                    <span class="h2-underline"></span>
                     <form action="" id="form">
                         <label for="name">Enter Your Name</label>
                         <input type="text" name="name" id="form-name" placeholder="Name" required>
@@ -140,16 +147,14 @@
                     </form>
                 </div>
             </div>
-
         </section>
     </main>
-    <footer class="navbar">
+    <footer id="footer">
         <div id="footer-left-container">
-            <p> &copy;2020 AeonDS</p>
+            <div>AeonDS 2020 &copy; </div>
         </div>
     </footer>
     <script src="index.js"></script>
 
 </body>
-
 </html>

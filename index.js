@@ -1,3 +1,19 @@
+
+let navbar = document.getElementById('navbar') 
+scrollNavbar = () => {
+
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}
+
+// Make sure the navbar has opacity on site load if not starting on the main page
+window.onload = scrollNavbar
+window.onscroll = scrollNavbar
+
 // Hamburger mobile menu
 let mainNav = document.getElementById('js-menu')
 let navBarToggle = document.getElementById('js-navbar-toggle')
